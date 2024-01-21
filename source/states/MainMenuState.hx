@@ -30,11 +30,11 @@ class MainMenuState extends MusicBeatState
 	var cameraTween:Array<FlxTween> = [];
 	
 	var optionShit:Array<String> = [
-		'story_mode',
+		//'story_mode',
 		'freeplay',
 		#if MODS_ALLOWED 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
+		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		//'credits',
 		//#if !switch 'donate', #end
 		'options'
 	];
@@ -454,16 +454,16 @@ class MainMenuState extends MusicBeatState
 
 				    switch (daChoice)
 					    {
-						case 'story_mode':
-							MusicBeatState.switchState(new StoryMenuState());
+						//case 'story_mode':
+							//MusicBeatState.switchState(new StoryMenuState());
 						case 'freeplay':
 							MusicBeatState.switchState(new FreeplayState());	
 						case 'mods':
 							MusicBeatState.switchState(new ModsMenuState());									
 						case 'options':						    
 							MusicBeatState.switchState(new options.OptionsState());
-						case 'credits':
-							MusicBeatState.switchState(new CreditsState());	
+						//case 'credits':
+							//MusicBeatState.switchState(new CreditsState());	
 					    }
 				}    
 		});
